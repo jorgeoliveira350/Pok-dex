@@ -1,0 +1,50 @@
+
+body {
+    background-image: url(https://images7.alphacoders.com/592/592678.jpg);
+}
+
+.container {
+    width: 800px;
+}
+
+.content {
+    
+}
+
+#pokedex {
+    position: absolute;
+}
+
+h1 {
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+#searchInput {
+    width: 180px;
+    height: 40px;
+}
+
+#botaoInput {
+    height: 40px;
+}
+
+.content {
+    position: relative;
+    right: -31%;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.info {
+    position: relative;
+    left: 290px;
+    bottom: -330px;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+
+#imgPoke {
+    position: relative;
+    width: 120px;
+    margin-top: 18%;
+    left: 48%;
+}
