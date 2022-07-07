@@ -1,50 +1,32 @@
-
 body {
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.container-fluid {
     background-image: url(https://images7.alphacoders.com/592/592678.jpg);
 }
 
-.container {
-    width: 800px;
+.pokedex {
+    background-image: url(pokedex.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 855px;
+    height: 635px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.content {
-    
-}
-
-#pokedex {
+.content,
+.info {
     position: absolute;
 }
 
-h1 {
-    font-family: 'Pokemon Solid', sans-serif;
-}
-
-#searchInput {
-    width: 180px;
-    height: 40px;
-}
-
-#botaoInput {
-    height: 40px;
-}
-
 .content {
-    position: relative;
-    right: -31%;
-    font-family: 'Pokemon Solid', sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
 }
-
-.info {
-    position: relative;
-    left: 290px;
-    bottom: -330px;
-    font-family: 'Pokemon Solid', sans-serif;
-}
-
 
 #imgPoke {
-    position: relative;
     width: 120px;
-    margin-top: 18%;
-    left: 48%;
 }
