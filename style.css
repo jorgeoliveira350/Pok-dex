@@ -21,10 +21,35 @@ body {
     position: absolute;
 }
 
+#tableHolder {
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 176px;
+}
+
+table thead {
+    display: block;
+}
+
+#tableHolder tr:hover {
+    cursor: pointer;
+    background-color: #ffa861;
+}
+
+
 .content {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    left: 273px;
+    top: 44px;
+    width: 299px;
+    height: 221px;
+}
+
+.info {
+    top: 378px;
+    left: 273px;
+    width: 297px;
+    height: 217px;
 }
 
 #imgPoke {

@@ -13,6 +13,11 @@
       crossorigin="anonymous"
     />
     <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <title>Pokédex</title>
   </head>
   <body>
@@ -23,13 +28,9 @@
             <div class="content">
               <h1>Pokédex</h1>
               <form>
-                <input
-                  type="text"
-                  value=""
-                  placeholder="Nome do Pokémon."
-                  id="searchInput"
-                  required
-                />
+                <select name="" id="selectType" class="form-control">
+                  <option value="">Selecione um tipo.</option>
+                </select>
                 <input
                   type="submit"
                   for="searchInput"
@@ -37,19 +38,30 @@
                   value="Buscar!"
                   class="btn btn-warning"
                 />
+                <img src="" alt="" id="imgPoke" />
               </form>
             </div>
 
             <div class="info">
-              Nome:
-              <span id="nome" class="infoPokemon">nome</span>
-              Tipo:
-              <span id="tipo" class="infoPokemon">tipo</span>
-              Altura:
-              <span id="altura" class="infoPokemon">altura</span>
-              Peso:
-              <span id="peso" class="infoPokemon">peso</span>
-              <img src="" alt="" id="imgPoke" />
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span>Nome:</span>
+                    </th>
+                    <th scope="col">
+                      <span>Id:</span>
+                    </th>
+                    <th scope="col">
+                      <span>Altura:</span>
+                    </th>
+                    <th scope="col">
+                      <span>Peso:</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="tableHolder"></tbody>
+              </table>
             </div>
           </div>
         </div>
